@@ -38,7 +38,7 @@
 }
 
 /* Responsive typography */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 861px) {
   :root {
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
@@ -860,9 +860,10 @@ padding: 0 10vw;
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-@media screen and (max-width: 860px){
+@media (max-width: 860px){
+
   .container{
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
   .nav__menu{
     position: fixed;
@@ -971,7 +972,7 @@ padding: 0 10vw;
 
 
 /* For medium devices */
-@media (min-width : 861px) and ( max-width: 1023px){
+@media (min-width : 861px) and ( max-width: 1182px){
   
   .container { 
     padding: 0 5vw;
