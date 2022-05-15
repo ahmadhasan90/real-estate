@@ -781,6 +781,7 @@ padding: 0 10vw;
 .footer__info,
 .footer__privacy{
   display: flex;
+  text-align: center;
 }
 
 .footer__info{
@@ -929,15 +930,18 @@ padding: 0 10vw;
    .value__orbe,
    .contact__orbe{
      width:240px;
-     height: 270px;
+     height: 290px;
    }
 
-   .home__img,
    .value__img,
    .contact__img{
      width: 220px;
      height:280px;
      display: inline-flex;
+   }
+
+   .home__img{
+     width: 220px;
    }
 
    .popular .container{
