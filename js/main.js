@@ -1,6 +1,6 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
-    const header =document.querySelector('header')
+    const header =document.querySelector('.header')
     if(this.scrollY>= 50) {
       header.classList.add('scroll-header')
     }
@@ -28,95 +28,34 @@ const swiper = new Swiper(".popular__container", {
 
 /*=============== VALUE ACCORDION ===============*/
 
-/*
-                            Testing
+
+                            
 
  const accordionItems = document.querySelectorAll('.value__accordion-item')                 
-const accordionHeader = document.querySelector('.value__accordion-header')                    
+ const accordionHeader = document.querySelector('.value__accordion-header')                    
 
 
-accordionItems.forEach(function(item){
+
+  accordionItems.forEach(function(item){
   item.addEventListener('click',()=>{
 
-    const accordionContent = item.querySelector('.value__accordion-content')
-    item.classList.toggle('accordion-open')
-
-    if (item.classList.contains('accordion-open')){
-      accordionContent.style.height = accordionContent.scrollHeight + 'px'
+    if(item.classList.contains('accordion-open')){
+      item.classList.remove('accordion-open')
     }
     else{
-      accordionContent.style.height =0
-    }
+      accordionItems.forEach(item=>{item.classList.remove('accordion-open')})
 
+      item.classList.add('accordion-open')
+
+    }
+    
+  
   })
 
-
-
-}) */
-
-                                                                                                            
+}) 
 
 
 
-/* accordionItems.forEach(function(item){
-    item.querySelector('.value__accordion-header').addEventListener('click', ()=>
-      {
-        const accordionHeader = item.querySelector('.value__accordion-header')
-
-        const accordionContent = item.querySelector('.value__accordion-content')
-        
-        
-        accordionHeader.classList.toggle('accordion-open')
-
-        if (accordionHeader.classList.contains('accordion-open')){
-          accordionContent.style.height = accordionContent.scrollHeight + 'px'
-        }
-
-        else{
-          accordionContent.style.height =0
-        }
-        
-      })
-
-    
-})
-
-*/
- 
-    const accordionItems = document.querySelectorAll('.value__accordion-item')
-
-    accordionItems.forEach((item)=>{
-      const accordionHeader=item.querySelector('.value__accordion-header')
-
-      accordionHeader.addEventListener('click',()=>{
-        const accordionOpen = document.querySelector('.accordion-open')
-
-        toggleItem(item)
-
-        if(accordionOpen && accordionOpen!== item){
-          toggleItem(accordionOpen)
-        }
-      })
-
-
-    })
-
-
-    const toggleItem = function (item) {
-      const accordionContent = item.querySelector('.value__accordion-content')
-
-      if (item.classList.contains('accordion-open')) {
-      accordionContent.removeAttribute('style')
-      item.classList.remove('accordion-open')
-      }
-      else {
-      accordionContent.style.height = accordionContent.scrollHeight + 'px'
-      item.classList.add('accordion-open')
-      }
-
-  }
-
- 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -193,6 +132,8 @@ if(selectedTheme){
 }
 
 */
+
+
 
 
 
